@@ -75,8 +75,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <span>Start Planning Today</span>
               <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="text-gray-600 px-8 py-4 rounded-xl hover:bg-white/50 transition-all duration-200 font-medium text-lg">
-              Watch Demo
+            <button 
+              onClick={() => window.location.href = '/marketplace'}
+              className="text-gray-600 px-8 py-4 rounded-xl hover:bg-white/50 transition-all duration-200 font-medium text-lg"
+            >
+              Browse Vendors
             </button>
           </div>
 

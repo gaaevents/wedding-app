@@ -40,6 +40,12 @@ export const Header: React.FC<HeaderProps> = ({
               <Home className="w-4 h-4" />
               <span>Home</span>
             </button>
+            <button 
+              onClick={() => onNavigate('marketplace')}
+              className="flex items-center space-x-1 text-gray-600 hover:text-rose-600 transition-colors"
+            >
+              <span>Vendors</span>
+            </button>
             {currentUser && (
               <button 
                 onClick={() => onNavigate('dashboard')}

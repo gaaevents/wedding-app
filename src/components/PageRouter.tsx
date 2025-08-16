@@ -5,6 +5,10 @@ import { TermsPage } from './pages/TermsPage';
 import { HelpPage } from './pages/HelpPage';
 import { ContactPage } from './pages/ContactPage';
 import { ServicesPage } from './pages/ServicesPage';
+import { VendorMarketplacePage } from './pages/VendorMarketplacePage';
+import { BecomeVendorPage } from './pages/BecomeVendorPage';
+import { VendorLoginPage } from './pages/VendorLoginPage';
+import { PricingPage } from './pages/PricingPage';
 
 interface PageRouterProps {
   currentPage: string;
@@ -16,6 +20,14 @@ export const PageRouter: React.FC<PageRouterProps> = ({ currentPage, onNavigate 
     switch (currentPage) {
       case 'about':
         return <AboutPage />;
+      case 'marketplace':
+        return <VendorMarketplacePage />;
+      case 'vendors/join':
+        return <BecomeVendorPage />;
+      case 'vendors/login':
+        return <VendorLoginPage />;
+      case 'vendors/pricing':
+        return <PricingPage />;
       case 'privacy':
         return <PrivacyPage />;
       case 'terms':
