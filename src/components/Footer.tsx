@@ -45,9 +45,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     vendors: [
       { name: 'Become a Vendor', page: 'vendors/join' },
       { name: 'Vendor Login', page: 'vendors/login' },
+      { name: 'Vendor Pricing', page: 'vendors/pricing' },
       { name: 'Vendor Resources', page: 'vendors/resources' },
       { name: 'Success Stories', page: 'vendors/stories' },
-      { name: 'Pricing Plans', page: 'vendors/pricing' },
       { name: 'Partner Program', page: 'vendors/partners' }
     ],
     legal: [
